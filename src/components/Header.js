@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // stateless component ES6
 // implicit return
@@ -18,6 +19,10 @@ const Header = (props, i) => (
     </h3>
   </header>
 );
+
+Header.propTypes = {
+  tagline: PropTypes.string.isRequired
+};
 
 // stateless component ES6
 // implicit return
